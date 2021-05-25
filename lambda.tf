@@ -11,9 +11,9 @@ resource "aws_lambda_function" "test_lambda" {
   handler       = "welcome.hello"
 
  
-  # source_code_hash = filebase64sha256("welcome.zip")
+  # source_code_hash = filebase64sha256("outputs/welcome.zip")
 
-  runtime = "nodejs12.x"
+  runtime = "python3.7"
 
 
 }
