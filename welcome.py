@@ -5,7 +5,7 @@ def hello(event, context):
                 "https://youtu.be/su9VDwCrCos",
                 "https://youtu.be/4L-mJc3XakU"];
     
-    print("Hello from Lambda!")
+  
     return {
         'statusCode': 200,
         'body': json.dumps(urls)
