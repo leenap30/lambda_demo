@@ -8,5 +8,5 @@ def hello(event, context):
     print("Hello from Lambda!")
     return {
         'statusCode': 200,
-        'body': json.stringify(urls)
+        'body': json.dumps(urls)
     }
