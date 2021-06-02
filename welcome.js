@@ -4,7 +4,7 @@ exports.handler = async (event) => {
                 "https://youtu.be/4L-mJc3XakU"];
     const response = {
         statusCode: 200,
-        body: json.stringfy(urls),
+        body: JSON.stringfy(urls),
     };
 return response;
 }
