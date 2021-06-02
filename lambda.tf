@@ -1,6 +1,6 @@
 data "archive_file" "welcome" {
   type        = "zip"
-  source_file = "welcome.py"
+  source_file = "welcome.js"
   output_path = "outputs/welcome.zip"
 }
 
@@ -13,7 +13,7 @@ resource "aws_lambda_function" "test_lambda" {
  
   # source_code_hash = filebase64sha256("outputs/welcome.zip")
 
-  runtime = "python3.7"
+   runtime = "nodejs12.x"
 
 
 }
