@@ -8,7 +8,7 @@ resource "aws_lambda_function" "test_lambda" {
   filename      = "outputs/welcome.zip"
   function_name = "welcome"
   role          = aws_iam_role.lambda_role.arn
-  handler       = "welcome.hello"
+  handler       = "welcome.handler"
 
  
   # source_code_hash = filebase64sha256("outputs/welcome.zip")
