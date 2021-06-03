@@ -1,8 +1,9 @@
 exports.handler = async (event) => {
    
-    var urls = ["https://youtu.be/embed/EBSdyoO3goc",
-                "https://youtu.be/embed/su9VDwCrCos",
-                "https://youtu.be/embed/4L-mJc3XakU"];
+    var urls = ["https://www.youtube.com/embed/kCl9j9POsJ4",
+                "https://www.youtube.com/embed/k_indcC331o",
+                "https://www.youtube.com/embed/BgKDHAz7PWM",
+                "https://www.youtube.com/embed/SGhEhJVc3SU"];
      const response = {
         statusCode: 200,
         body: JSON.stringify(urls),
